@@ -1,7 +1,0 @@
-Flask
-tensorflow
-Keras
-numpy
-scipy
-pandas
-opencv-python
