@@ -1,12 +1,13 @@
 from flask import Flask
 from flask import render_template, request, jsonify
 from keras.models import load_model
+import detector
+
 
 app = Flask(__name__)
 
-
 # load model
-ResNet_model = load_model('./saved_model/weights.best.ResNet50.hdf5')
+ResNet_model = load_model('../saved_model/weights.best.ResNet50.hdf5')
 
 
 # index webpage displays cool visuals and receives user input text for model
