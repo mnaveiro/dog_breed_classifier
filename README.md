@@ -18,7 +18,7 @@ The app will accept any user-supplied image as input. If a dog is detected in th
 	```
 		python app.py
 	```
-    *Take into accout that the first runnig may take a while as the app downloads some files for the models being used.*
+    *Take into account that the first running may take a while as the app downloads some files for the models being used.*
 6. Browse to http://0.0.0.0:3001/ or http://localhost:3001/
 7. Upload Image files
     *Take into accout that the first file uploading may take a while as the app downloads some files for the models being used.*
@@ -28,7 +28,7 @@ I use OpenCV's implementation of Haar feature-based cascade classifiers to detec
 
 I use a pre-trained ResNet-50 model to detect dogs in images. In order to check to see if an image is predicted to contain a dog by the pre-trained ResNet-50 model, we need only check if the model returns a value between 151 and 268 (the categories corresponding to dogs).
 
-Finaly, I use transfer learning to create a CNN that can identify dog breed from images. The model uses the the pre-trained ResNet50 model as a fixed feature extractor.
+Finally, I use transfer learning to create a CNN that can identify dog breed from images. The model uses the pre-trained ResNet50 model as a fixed feature extractor.
 
 #### Steps:
 * if a dog is detected in the image, return the predicted breed.
