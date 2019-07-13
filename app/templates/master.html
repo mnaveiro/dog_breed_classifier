@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Dog Breed Classifier</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Dog Breed Project</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="https://www.udacity.com/">Made with Udacity</a></li>
+                    <li><a href="https://github.com/mnaveiro/dog_breed_classifier">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="text-center">Dog Breed Project</h1>
+            <p class="text-center">The goal is to classify images of dogs according to their breed.</p>
+            <hr />
+
+            <div class="row">
+                <div class="col-lg-12 form-group-lg">
+                    <!-- form action="/go" method="POST" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="fileupload">Select Files:</label>
+                            <input type="file" name="file[]" multiple="" id='fileupload'>
+                            <p class="help-block">Image types only. Image will be converted to
+                                proper shape.<br />Also allow for time for image upload and predictions.
+                            </p>
+                            <label class="btn btn-primary">
+                                Upload <input type="submit" value="Upload" style="display:none;">
+                            </label>
+                        </div>
+                    </form -->
+                    <form action="/go" method="post" enctype="multipart/form-data">
+                        Choose the file: <input type="file" name="photo"/><BR>
+                            <input type="submit" value="Upload"/>
+                    </form>                   
+                </div>
+            </div>
+
+            {% block message %}
+            {% endblock %}
+        </div>
+    </div>
+    
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+
+</html>
