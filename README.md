@@ -44,6 +44,4 @@ I've found help to solve execution problems here: https://stackoverflow.com/ques
 
 and here: https://github.com/jrosebr1/simple-keras-rest-api/issues/5
 
-
-
 [image1]: ./images/Screenshot_1.png "Sample Output"
