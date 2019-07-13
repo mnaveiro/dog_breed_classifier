@@ -39,7 +39,9 @@ Finally, I use transfer learning to create a CNN that can identify dog breed fro
 
 ### Credits
 This app was developed following the guide of this Udacity's nanodegree: https://eu.udacity.com/course/data-scientist-nanodegree--nd025
+
 I've found help to solve execution problems here: https://stackoverflow.com/questions/51231576/tensorflow-keras-expected-global-average-pooling2d-1-input-to-have-shape-1-1
+
 and here: https://github.com/jrosebr1/simple-keras-rest-api/issues/5
 
 
